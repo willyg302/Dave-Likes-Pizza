@@ -1,0 +1,23 @@
+How to build Dave Likes Pizza
+-----------------------------
+
+1. Use a JavaScript minifier (I like UglifyJS: http://marijnhaverbeke.nl/uglifyjs) on the contents of the src/ directory, compressing them into a single file called dave-min.js (keep this file in the src/ directory)
+
+2. Copy the following file structure to the remote host:
+	/
+	|---src/
+	|	|---dave-min.js
+	|
+	|---lib/
+	|	|---crafty-min.js
+	|	|---sagittarius-min.js
+	|
+	|---assets/
+	|	|---*.png
+	|	|---*.mp3
+	|	|---*.ogg
+	|
+	|---index.html
+
+
+NOTE: You should use index-debug.html for all modifications, as index.html contains only a reference to dave-min.js (which would be hard to modify).

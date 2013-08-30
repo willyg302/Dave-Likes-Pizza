@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'>
+	<script src="lib/crafty-min.js"></script>
+	<script src="lib/sagittarius.js"></script>
+	<script src="src/dave.js"></script>
+	<script src="src/dave-comps.js"></script>
+	<script src="src/dave-scenes.js"></script>
+	<script>
+		window.addEventListener('load', Game.start);
+	</script>
+	<style type="text/css">
+		a {
+			text-decoration: none;
+			color: white;
+		}
+		body {
+			text-align: center;
+			font-family: 'Acme', sans-serif;
+		}
+		#cr-stage {
+			margin: 20px auto 0;
+		}
+		.bottom {
+			font-size: 16px;
+			color: #888;
+			margin-top: 50px;
+		}
+		.bottom a {
+			color: #aaa;
+		}
+		.lineinput {
+			border: none;
+			background: transparent;
+			border-bottom: 2px solid white;
+			font-family: 'Acme', sans-serif;
+			font-size: 18px;
+			color: white;
+		}
+		.lineinput:focus {
+			outline: none;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div id="cr-stage"></div>
+	<p class="bottom">Copyright &copy; <script>document.write(new Date().getFullYear());</script> <a href="http://willyg302.wordpress.com/">WillyG Productions</a></p>
+</body>
+</html>
