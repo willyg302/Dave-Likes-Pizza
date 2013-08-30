@@ -197,6 +197,7 @@ Crafty.scene('Game', function() {
 Crafty.scene('Loading', function() {
 	Crafty.e('Txt').size(320, 50).at(160, 200).text("Loading...");
 	Crafty.load([
+		'assets/bg.png',
 		'assets/sprite.png',
 		'assets/dave-sprite.png',
 		'assets/dave-logo.png',
@@ -207,6 +208,7 @@ Crafty.scene('Loading', function() {
 		'assets/splat.mp3', 'assets/splat.ogg',
 		'assets/powerup.mp3', 'assets/powerup.ogg',
 		'assets/powerdown.mp3', 'assets/powerdown.ogg'], function() {
+		Crafty.background("url('assets/bg.png') no-repeat");
 		Crafty.sprite(32, 'assets/sprite.png', {
 			pauseNorm: [0, 0, 1, 1],
 			pauseOver: [1, 0, 1, 1],
