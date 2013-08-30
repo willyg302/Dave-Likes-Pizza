@@ -3,8 +3,7 @@ Dave Likes Pizza!
 
 An HTML5 game written in JavaScript over the course of one week.
 
-Authors: William Gaul  
-Version: 0.1
+Author: William Gaul
 
 ---
 
