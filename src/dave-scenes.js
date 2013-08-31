@@ -25,7 +25,7 @@ Crafty.scene('Leaderboards', function() {
 	Crafty.e('Txt').textFont({size: '36px'}).size(600, 40).at(20, 20).css({'color': 'white', 'text-align': 'left'})
 	.text("Leaderboards");
 	var lb = Crafty.e('Txt').textFont({size: '18px'}).size(560, 260).at(40, 80).css({'color': 'white', 'text-align': 'left'}).text("Loading...");
-	window.sag.GetLeaderboard({name: 'davelb1', callback: function(response) {
+	window.sag.GetLeaderboard({name: 'davelb2', callback: function(response) {
 		var data = JSON.parse(response.replace("<resp>", "").replace("</resp>", "")).data;
 		var table = '';
 		// We only want the top 10 (to look nice)
@@ -159,7 +159,7 @@ Crafty.scene('Game', function() {
 				}
 				submitTxt.text("Submitting...");
 				window.sag.PostToLeaderboard({
-					name: 'davelb1',
+					name: 'davelb2',
 					score: score,
 					scoreid: document.getElementById('playername').value,
 					callback: function(response) {
